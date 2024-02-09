@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 import os
 import io
-import pickle
 import streamlit as st
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import ConversationalRetrievalChain
@@ -10,7 +9,8 @@ from langchain.document_loaders.csv_loader import CSVLoader
 
 class Embedder:
     """
-    Embedder objects allow to create embeddings of any 
+    Embedder objects allow to create embeddings of any .csv document.
+    Use getVectorStore to create a vector store from a .csv document in one line. It can be then used for the retriever.
     """
 
     def __init__(self, OPENAI_API_KEY):
@@ -33,7 +33,7 @@ class Embedder:
         # Else return the saved vector store
         data_path = data_filename + ".csv"
         vector_filename = f"vectors_{data_filename}"
-        vectorsPath = f"vectors_{data_filename}.pkl"
+        vectorsPath = vector_filename + ".pkl"
         
         embeddings = OpenAIEmbeddings(openai_api_key=self.API_KEY)
     
