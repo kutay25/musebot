@@ -1,4 +1,3 @@
-difflib
 langchain
 openai
 langchain-opeani
