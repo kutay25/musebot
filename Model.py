@@ -7,7 +7,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.messages import AIMessage, HumanMessage, get_buffer_string
 from operator import itemgetter
 from langchain.memory import ConversationBufferMemory
-from langchain_openai import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain_core.runnables import RunnablePassthrough, RunnableParallel, RunnableLambda
 
 
