@@ -1,3 +1,2 @@
-langchain
 openai
-langchain-opeani
+langchain
