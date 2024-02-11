@@ -1,7 +1,7 @@
 import os
 import io
 import streamlit as st
-from langchain_openai import OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.vectorstores import FAISS
 from langchain.document_loaders.csv_loader import CSVLoader
