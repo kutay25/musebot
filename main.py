@@ -3,7 +3,6 @@ from Model import Model
 from Utilities import appendVideo
 import streamlit as st
 import os, time
-from dotenv import load_dotenv
 from streamlit_chat import message
 from langchain.memory import ConversationBufferMemory
 
