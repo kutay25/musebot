@@ -39,7 +39,7 @@ class Embedder:
         # If wanted data is already saved in its folder
         if(os.path.isdir(vector_filename)):
             print(f"Loading saved vectorstore from {vector_filename}")
-            vectorStore = FAISS.load_local(vector_filename, embeddings)
+            vectorStore = FAISS.load_local(vector_filename, embeddings, allow_dangerous_deserialization=True)
             return vectorStore
         
         # Check if data_filename exists before creating a new vector store
