@@ -16,7 +16,7 @@ class Model:
     # Template for creating the standalone question
     std_q_template = """ 
     In your Standalone Question you must explicitly state what is the type of the question:
-    Case 1) The user is asking for a song recommendation. If so, include this in your standalone question: "The user is asking for a song recommendation from the RAG Context part of input. The keywords that describe the song are: (Insert keywords)"
+    Case 1) The user is currently asking for a song recommendation. If so, include this in your standalone question: "The user is asking for a song recommendation from the RAG Context part of input. The keywords that describe the song are: (Insert keywords)"
     Example situation for Case 1) might be: "The user is asking for a song recommendation from the RAG Context part of input. The keywords that describe the song are: Instrumental, calming, slow, ambient."
     Case 2) The user is currently NOT asking for a song recommendation in the "Follow Up Input". If so, write Standalone Question in this format: First, summarize the chat history, include the title of latest mentioned song. 
     Then, write that the user wants does not expect a new recommendation from the RAG Context part of your input. Write that the user expects you to answer the following question, and thene write "(here the Follow Up Input)"  
