@@ -12,7 +12,7 @@ Uses LangChain to do "Retrieval Augmented Generation" over the MusicCaps song de
 ## Running Locally 💻
 Follow these steps to run musebot locally:
 #### 1. Clone the repository:
-`git clone https://github.com/yvann-hub/Robby-chatbot.git`
+`git clone https://github.com/kutay25/musebot.git`
 
 #### 2. Change directory to project folder:
 `cd path/to/project`
