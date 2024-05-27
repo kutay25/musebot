@@ -4,3 +4,4 @@ streamlit-chat
 tiktoken
 openai
 langchain
+langchain_community
